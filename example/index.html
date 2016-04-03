@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Push Menu</title>
+	<style type="text/css">
+	#container {height: 1000px;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="pushmenu.css">
+</head>
+<body>
+<div id="container">
+	<div id="pm_menu" class="pm_close"></div>
+	<button id="open">Open</button>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="pushmenu.js"></script>
+<script type="text/javascript">
+	(function($){
+	    $('#pm_menu').pushmenu({ button : "#open" });
+  })(jQuery);
+</script>
+</body>
+</html>
